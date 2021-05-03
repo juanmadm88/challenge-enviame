@@ -1,3 +1,4 @@
+//TODO: Crear un archivo de variables de ambiente en importarlo para sacar los strings hardcodeados
 const faker = require("faker");
 const MongoClient = require("mongodb").MongoClient;
 
