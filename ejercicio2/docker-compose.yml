@@ -2,7 +2,7 @@ version: "2"
 services:
   app:
     container_name: app
-    restart: always
+    restart: "no"
     build: .
     ports:
       - "3000:3000"
@@ -15,8 +15,3 @@ services:
       - ./data:/data/db
     ports:
       - "27017:27017"
-    healthcheck:
-        test: ["CMD", "echo", "show dbs", "|", "mongo"]
-        interval: 30s
-        timeout: 10s
-        retries: 3
