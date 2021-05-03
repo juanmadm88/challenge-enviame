@@ -1,0 +1,20 @@
+url repository
+github: 
+go to code --> clone --> select https option
+
+clone the repository into a specific folder using the next command in a linux shell
+$ git clone 
+
+inside /ejercicio4 folder checkout develop branch
+$ git checkout develop
+
+make a git pull from the branch
+$ git pull
+
+from linux shell, install all dependencies from package json using the next command
+$ npm -i
+
+from linux shell start node server, using the next command
+$ npm run startdev
+
+--app started using node version 14.15.4
