@@ -10,12 +10,12 @@ let calculateDeliveryDay = (aNumber) => {
 }
 
 let calculateOrder = (kilometers) => {
-    return Math.round(kilometers/100);
+    return Math.floor(kilometers/100);
 }
 
 let kilometers = generateKilometers();
 let order = calculateOrder(kilometers);
-console.log("order ", order);
 let deliveryDays = calculateDeliveryDay(order);
+console.log("fibonacci de ", order)
 
-console.log(`El tiempo de entrega, será de apróximadamente  ${deliveryDays} días`)
+console.log(`El tiempo de entrega para recorrer ${kilometers} km, será de apróximadamente  ${deliveryDays} días`)
