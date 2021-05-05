@@ -16,6 +16,5 @@ let calculateOrder = (kilometers) => {
 let kilometers = generateKilometers();
 let order = calculateOrder(kilometers);
 let deliveryDays = calculateDeliveryDay(order);
-console.log("fibonacci de ", order)
 
 console.log(`El tiempo de entrega para recorrer ${kilometers} km, será de apróximadamente  ${deliveryDays} días`)
